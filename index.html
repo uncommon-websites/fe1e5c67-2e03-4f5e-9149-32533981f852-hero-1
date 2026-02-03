@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zinance Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <div class="relative w-full h-screen min-h-[600px] bg-white">
+        
+        <!-- Background Image Placeholder -->
+        <!-- Using a dark placeholder to mimic the office interior lighting -->
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920" 
+             alt="Modern Office Interior" 
+             class="absolute inset-0 w-full h-full object-cover z-0 opacity-20">
+        
+        <!-- Dark Overlay to ensure text contrast matches the photo's lighting -->
+        <div class="absolute inset-0 bg-slate-50/30 z-0"></div>
+
+        <!-- Navigation Bar -->
+        <nav class="absolute top-0 left-0 w-full z-20 flex justify-between items-start px-6 py-6 md:px-10 md:py-8 text-[#475569]">
+            <!-- Left Links -->
+            <div class="flex gap-6 md:gap-8 text-base md:text-lg font-medium tracking-wide">
+                <a href="#" class="hover:text-[#1e40af] transition-colors">Bookkeeping</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Taxes</a>
+            </div>
+
+            <!-- Center Logo -->
+            <!-- Using absolute positioning to ensure it stays perfectly centered relative to the screen, not the flex items -->
+            <div class="absolute left-1/2 top-6 md:top-8 transform -translate-x-1/2 text-center pointer-events-none">
+                <span class="uppercase font-bold text-sm md:text-base tracking-[0.2em] text-white whitespace-nowrap">
+                    Zinance
+                </span>
+            </div>
+
+            <!-- Right Links -->
+            <div class="flex gap-6 md:gap-8 text-base md:text-lg font-medium tracking-wide">
+                <a href="#" class="hover:text-gray-300 transition-colors">CFO</a>
+                <a href="#" class="hover:text-gray-300 transition-colors">Get Started</a>
+            </div>
+        </nav>
+
+        <!-- Main Headline -->
+        <div class="absolute bottom-0 left-0 w-full z-20 px-6 pb-12 md:px-10 md:pb-16">
+            <h1 class="text-white font-bold leading-[0.9] tracking-tight" style="font-size: clamp(3rem, 9.5vw, 12rem);">
+                The #1 Back-office<br>
+                for Ambitious<br>
+                Companies.
+            </h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
